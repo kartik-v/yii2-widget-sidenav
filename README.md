@@ -1,6 +1,12 @@
 yii2-widget-sidenav
 ===================
 
+[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-widget-sidenav/v/stable.svg)](https://packagist.org/packages/kartik-v/yii2-widget-sidenav)
+[![License](https://poser.pugx.org/kartik-v/yii2-widget-sidenav/license.svg)](https://packagist.org/packages/kartik-v/yii2-widget-sidenav)
+[![Total Downloads](https://poser.pugx.org/kartik-v/yii2-widget-sidenav/downloads.svg)](https://packagist.org/packages/kartik-v/yii2-widget-sidenav)
+[![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-widget-sidenav/d/monthly.png)](https://packagist.org/packages/kartik-v/yii2-widget-sidenav)
+[![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-widget-sidenav/d/daily.png)](https://packagist.org/packages/kartik-v/yii2-widget-sidenav)
+
 This widget is a collapsible side navigation menu built to seamlessly work with Bootstrap framework. It is built over Bootstrap [stacked nav](http://getbootstrap.com/components/#nav-pills) component. This widget class extends the [Yii Menu widget](https://github.com/yiisoft/yii2/blob/master/framework/widgets/Menu.php). Upto 3 levels of submenus are by default supported by the CSS styles to balance performance and useability. You can choose to extend it to more or less levels by customizing the [CSS](https://github.com/kartik-v/yii2-widgets/blob/master/assets/css/sidenav.css). 
 
 > NOTE: This extension is a sub repo split of [yii2-widgets](https://github.com/kartik-v/yii2-widgets). The split has been done since 08-Nov-2014 to allow developers to install this specific widget in isolation if needed. One can also use the extension the previous way with the whole suite of [yii2-widgets](http://demos.krajee.com/widgets).
