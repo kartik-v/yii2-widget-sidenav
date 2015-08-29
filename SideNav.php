@@ -7,7 +7,7 @@
  * @version 1.0.0
  */
 
-namespace kartik\sidenav;
+namespace jumper423\sidenav;
 
 use Yii;
 use yii\base\InvalidConfigException;
