@@ -7,7 +7,7 @@
  * @version 1.0.0
  */
 
-namespace kartik\sidenav;
+namespace jumper423\sidenav;
 
 /**
  * Asset bundle for SideNav Widget
