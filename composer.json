@@ -1,5 +1,5 @@
 {
-    "name": "kartik-v/yii2-widget-sidenav",
+    "name": "jumper423/yii2-widget-sidenav",
     "description": "An enhanced side navigation menu styled for bootstrap (sub repo split from yii2-widgets)",
     "keywords": ["yii2", "extension", "widget", "sidenav", "navigation", "menu", "bootstrap", "jquery", "plugin"],
     "homepage": "https://github.com/kartik-v/yii2-widget-sidenav",
