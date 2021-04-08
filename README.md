@@ -29,9 +29,7 @@ or add
 
 to the ```require``` section of your `composer.json` file.
 
-## Latest Release
-
-> NOTE: The latest version of the module is v1.0.0 released on 08-Nov-2014. Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-widget-sidenav/blob/master/CHANGE.md) for details.
+Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-widget-sidenav/blob/master/CHANGE.md) for details.
 
 ## Demo
 
@@ -43,7 +41,7 @@ You can refer detailed [documentation and demos](http://demos.krajee.com/widget-
 use kartik\sidenav\SideNav;
      
 echo SideNav::widget([
-	'type' => SideNav::TYPE_DEFAULT,
+	'type' => SideNav::TYPE_SECONDARY,
 	'heading' => 'Options',
 	'items' => [
 		[

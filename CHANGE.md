@@ -1,3 +1,12 @@
+version 1.0.1
+=============
+
+**Date:** 08-Apr-2021
+
+- (enh #10): Enhance to work with Bootstrap 4.x. 
+- (bug #9): Fix demo site.
+- (bug #3): Enhance `linkTemplate` to be overridden correctly.
+
 version 1.0.0
 =============
 

@@ -1,12 +1,12 @@
 /*!
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2013
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2021
  * @package yii2-widgets
- * @version 3.1.0
+ * @version 1.0.1
  *
- * Side navigation menu bar styling for Twitter Bootstrap 3.0
+ * Side navigation menu bar styling for Bootstrap 3.x & 4.x
  * Built for Yii Framework 2.0
  * Author: Kartik Visweswaran
- * Year: 2013
+ * Year: 2013 - 2021
  * For more Yii related demos visit http://demos.krajee.com
  */
 .kv-sidenav ul {
@@ -24,15 +24,15 @@
 }
 
 .kv-sidenav .indicator {
-    color: #999999;
+    color: #999;
 }
 
 .kv-sidenav .active > a > span > .indicator {
-    color: #ffffff;
+    color: #fff;
 }
 
 .kv-sidenav .active > ul {
-    background-color: #f3f8fC;
+    background-color: #f3f8fc;
 }
 
 .kv-sidenav .nav {
@@ -57,4 +57,22 @@
 
 .kv-sidenav .nav .active > ul {
     display: block;
+}
+
+.kv-sidenav-bs4 {
+    flex-wrap: nowrap;
+}
+
+.kv-sidenav-bs4.nav-pills .nav-item .nav-link {
+    border-radius: 0;
+}
+
+.kv-sidenav-bs4.kv-no-heading.nav-pills > .nav-item:first-child > .nav-link {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.kv-sidenav-bs4.nav-pills > .nav-item:last-child > .nav-link {
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
 }

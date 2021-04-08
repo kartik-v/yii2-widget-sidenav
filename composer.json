@@ -4,7 +4,7 @@
     "keywords": ["yii2", "extension", "widget", "sidenav", "navigation", "menu", "bootstrap", "jquery", "plugin"],
     "homepage": "https://github.com/kartik-v/yii2-widget-sidenav",
     "type": "yii2-extension",
-    "license": "BSD 3-Clause",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Kartik Visweswaran",
@@ -18,6 +18,11 @@
     "autoload": {
         "psr-4": {
             "kartik\\sidenav\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
         }
     }
 }
