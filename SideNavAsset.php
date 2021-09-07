@@ -3,7 +3,7 @@
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2021
  * @package yii2-widgets
  * @subpackage yii2-widget-sidenav
- * @version 1.0.1
+ * @version 1.0.2
  */
 
 namespace kartik\sidenav;

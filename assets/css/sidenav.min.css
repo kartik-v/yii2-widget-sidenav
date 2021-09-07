@@ -1,11 +1,11 @@
 /*!
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2021
  * @package yii2-widgets
- * @version 1.0.1
+ * @version 1.0.2
  *
  * Side navigation menu bar styling for Bootstrap 3.x & 4.x
  * Built for Yii Framework 2.0
  * Author: Kartik Visweswaran
  * Year: 2013 - 2021
  * For more Yii related demos visit http://demos.krajee.com
- */.kv-sidenav ul{padding:0;margin:0}.kv-sidenav li a{border-radius:0;border-bottom:1px solid #ddd}.kv-sidenav .closed,.kv-sidenav .opened{float:right}.kv-sidenav .indicator{color:#999}.kv-sidenav .active>a>span>.indicator{color:#fff}.kv-sidenav .active>ul{background-color:#f3f8fc}.kv-sidenav .nav,.kv-sidenav .nav .nav{display:none}.kv-sidenav .nav a{padding-left:9%}.kv-sidenav .nav .nav a{padding-left:18%}.kv-sidenav .active>ul,.kv-sidenav .nav .active>ul{display:block}.kv-sidenav-bs4{flex-wrap:nowrap}.kv-sidenav-bs4.nav-pills .nav-item .nav-link{border-radius:0}.kv-sidenav-bs4.kv-no-heading.nav-pills>.nav-item:first-child>.nav-link{border-top-left-radius:.25rem;border-top-right-radius:.25rem}.kv-sidenav-bs4.nav-pills>.nav-item:last-child>.nav-link{border-bottom-left-radius:.25rem;border-bottom-right-radius:.25rem}
+ */.kv-sidenav ul{padding:0;margin:0}.kv-sidenav li a,.kv-sidenav.nav-pills .nav-link{border-radius:0;border-bottom:1px solid #ddd}.kv-sidenav .closed,.kv-sidenav .opened{float:right}.kv-sidenav .indicator{color:#999}.kv-sidenav .active>a>span>.indicator{color:#fff}.kv-sidenav .active>ul{background-color:#f3f8fc}.kv-sidenav .nav,.kv-sidenav .nav .nav{display:none}.kv-sidenav .nav a{padding-left:9%}.kv-sidenav .nav .nav a{padding-left:18%}.kv-sidenav .active>ul,.kv-sidenav .nav .active>ul{display:block}.kv-sidenav-bs4{flex-wrap:nowrap}.kv-sidenav-bs4.nav-pills .nav-item .nav-link{border-radius:0}.kv-sidenav-bs4.kv-no-heading.nav-pills>.nav-item:first-child>.nav-link{border-top-left-radius:.25rem;border-top-right-radius:.25rem}.kv-sidenav-bs4.nav-pills>.nav-item:last-child>.nav-link{border-bottom-left-radius:.25rem;border-bottom-right-radius:.25rem}

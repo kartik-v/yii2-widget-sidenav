@@ -1,7 +1,7 @@
 /*!
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2021
  * @package yii2-widgets
- * @version 1.0.1
+ * @version 1.0.2
  *
  * Side navigation menu bar styling for Bootstrap 3.x & 4.x
  * Built for Yii Framework 2.0

@@ -4,7 +4,7 @@
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2021
  * @package yii2-widgets
  * @subpackage yii2-widget-sidenav
- * @version 1.0.1
+ * @version 1.0.2
  */
 
 namespace kartik\sidenav;
@@ -159,23 +159,23 @@ class SideNav extends Menu implements BootstrapInterface
         if (empty($this->options['id'])) {
             $this->options['id'] = $this->getId();
         }
-        $isBs4 = $this->isBs4();
+        $notBs3 = !$this->isBs(3);
         if (!isset($this->indMenuOpen)) {
-            $this->indMenuOpen = $isBs4 ? '<i class="indicator fas fa-angle-down"></i>' :
+            $this->indMenuOpen = $notBs3 ? '<i class="indicator fas fa-angle-down"></i>' :
                 '<i class="indicator glyphicon glyphicon-chevron-down"></i>';
         }
         if (!isset($this->indMenuClose)) {
-            $this->indMenuClose = $isBs4 ? '<i class="indicator fas fa-angle-right"></i>' :
+            $this->indMenuClose = $notBs3 ? '<i class="indicator fas fa-angle-right"></i>' :
                 '<i class="indicator glyphicon glyphicon-chevron-right"></i>';
         }
         if (!isset($this->iconPrefix)) {
-            $this->iconPrefix = $isBs4 ? 'fas fa-' : 'glyphicon glyphicon-';
+            $this->iconPrefix = $notBs3 ? 'fas fa-' : 'glyphicon glyphicon-';
         }
-        if ($isBs4 && !isset($this->addlCssClass)) {
+        if ($notBs3 && !isset($this->addlCssClass)) {
             $this->addlCssClass = 'text-secondary';
         }
         $this->activateParents = true;
-        $css = $isBs4 ? '' : 'nav-stacked';
+        $css = $notBs3 ? '' : 'nav-stacked';
         $this->submenuTemplate = "\n<ul class='nav nav-pills {$css}'>\n{items}\n</ul>\n";
         $linkCss = static::getCssClass(self::BS_NAV_LINK);
         $this->linkTemplate = '<a href="{url}" class="' . $linkCss . '">{icon}{label}</a>';
@@ -183,7 +183,7 @@ class SideNav extends Menu implements BootstrapInterface
         $this->labelTemplate = '{icon}{label}';
         $this->markTopItems();
         $css = ['nav', 'nav-pills', static::getCssClass(self::BS_NAV_STACKED), 'kv-sidenav'];
-        if ($isBs4) {
+        if ($notBs3) {
             $css[] = 'kv-sidenav-bs4';
         }
         if (empty($this->heading)) {
@@ -204,22 +204,19 @@ class SideNav extends Menu implements BootstrapInterface
     public function run()
     {
         $heading = '';
-        $isBs4 = $this->isBs4();
+        $notBs3 = !$this->isBs(3);
         $type = in_array($this->type, self::$_validTypes) ? $this->type : self::TYPE_DEFAULT;
         $color = constant('self::BS_PANEL_' . strtoupper($type));
         $colorCss = static::getCssClass($color);
         if (!empty($this->heading)) {
-            $css = [static::getCssClass(self::BS_PANEL_HEADING)];
-            if ($isBs4) {
-                $css = array_merge($css, explode(' ', $colorCss));
-            }
+            $css = (array) static::getCssClass(self::BS_PANEL_HEADING);
+            $css = array_merge($css, explode(' ', $colorCss));
             Html::addCssClass($this->headingOptions, $css);
-            $title = $isBs4 ? $this->heading : Html::tag('h3', $this->heading,
-                ['class' => static::getCssClass(self::BS_PANEL_TITLE)]);
+            $title = $this->heading;
             $heading = Html::tag('div', $title, $this->headingOptions);
         }
         $body = Html::tag('div', $this->renderMenu(), ['class' => 'table m-0']);
-        $css = $isBs4 ? "border-{$type}" : $colorCss;
+        $css = $notBs3 ? "border-{$type}" : $colorCss;
         Html::addCssClass($this->containerOptions, [static::getCssClass(self::BS_PANEL), $css]);
         echo Html::tag('div', $heading . $body, $this->containerOptions);
     }
@@ -291,9 +288,9 @@ class SideNav extends Menu implements BootstrapInterface
     protected function renderItem($item)
     {
         $this->validateItems($item);
-        $isBs4 = $this->isBs4();
+        $notBs3 = !$this->isBs(3);
         $template = ArrayHelper::getValue($item, 'template', $this->linkTemplate);
-        if ($isBs4) {
+        if ($notBs3) {
             $template = static::setCssClass($template,
                 ['nav-link', empty($item['active']) ? $this->addlCssClass : 'active']);
         }
